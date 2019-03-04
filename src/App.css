@@ -10,7 +10,8 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10%;
+  max-height: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,15 +20,94 @@
   color: white;
 }
 
+.back-button{
+    float:left;
+    margin-left: 5%;
+    margin-top: 1%;
+    background-color: #aab6fe;
+    color: white;
+    text-align: center;
+    padding: 1%; 
+}
+
+.container{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0%;
+}
+
+.participants{
+    float:left;
+    max-width: 20%;
+    margin-bottom: 10%;
+}
+
+.notes{
+    float: center;
+}
+
+.calendar{
+    display: grid;
+    grid-template-columns: 14% 14% 14% 14% 14% 14% 14% ;
+    height: 100%;
+}
+
+.event-info{
+    height: 100%;
+}
+
+.day{
+    width: 100%;
+    height: 10vh;
+    border: 1px solid #000000;
+}
+
+.date{
+    float:left;
+    margin-top: 1%;
+    margin-left: 5%;
+}
+
+.event{
+    background-color: #aab6fe;
+    color: white;
+    margin-top: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center; 
+    border:none;
+}
+
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar-list{
+    list-style-type: none;
+    padding-left: 0pt;
+}
+
+.calendar-container{
+    float: right;
+    width: 75%;
+    height: 100%;
+    justify-content: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+.sidebar{
+    float:left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 20%;
+    height: 100%;
+    padding-top: 0%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.sidebar-event{
+    margin-right: 2.5%;
+    margin-left: 2.5%;
 }

@@ -8,6 +8,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.App-header{
+    min-height: 10%;
+    max-height: 10%;
+}
+
+.App-logo{
+    max-height: 10%;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
