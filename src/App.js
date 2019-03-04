@@ -29,7 +29,6 @@ class App extends Component {
             });
     }
     render() {
-        console.log(this.state.events)
         if (!this.state.isLoaded) {
             return (<p> loading... </p>)
         }

@@ -45,7 +45,7 @@ class TableView extends Component {
         while (date.getMonth() === month) {
             dayList.push(
                 //add day to month grid
-                <div className="day">
+                <div className="day" key  = {date.getDate()}>
                     <p className="date">
                         {date.getDate()}
 
@@ -53,7 +53,7 @@ class TableView extends Component {
                     {this.props.events.map((event) => {
                         let a = new Date(Date.parse(event.date))
                         if (a.toDateString() === date.toDateString()) {
-                            return (<div className="event" onClick={() => this.setSelected(event)}>{event.title}</div>)
+                            return (<div className="event" key={event.database_id} onClick={() => this.setSelected(event)}>{event.title}</div>)
                         }
                     })}
                 </div>
